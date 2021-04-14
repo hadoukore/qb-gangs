@@ -21,7 +21,7 @@ Add event to rs-core/server/events.lua
 ```lua
 RegisterServerEvent("RSCore:Server:UpdateGangs")
 AddEventHandler("RSCore:Server:UpdateGangs", function(gangs)
-	QBShared.Gangs = gangs
+	RSShared.Gangs = gangs
 	RSCore.Shared.Gangs = gangs
 end)
 ```
@@ -29,7 +29,7 @@ Add event to rs-core/client/events.lua
 ```lua
 RegisterNetEvent("RSCore:Server:UpdateGangs")
 AddEventHandler("RSCore:Server:UpdateGangs", function(gangs)
-	QBShared.Gangs = gangs
+	RSShared.Gangs = gangs
 	RSCore.Shared.Gangs = gangs
 end)
 ```
