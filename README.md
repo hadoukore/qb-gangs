@@ -1,5 +1,5 @@
-# qb-gangs
-Gangs for QB-Core with Gang Support instead of Jobs, supports infinately scaling gangs. Super optimised down to 0.01ms with a gang, 0.00ms as a civilian.
+# rs-gangs
+Gangs for RS-Core with Gang Support instead of Jobs, supports infinately scaling gangs. Super optimised down to 0.01ms with a gang, 0.00ms as a civilian.
 
 # Features:
 
@@ -12,32 +12,32 @@ To begin creating a gang use `/creategang [name] [description]` to start the pro
 ![Preview](https://i.imgur.com/vVr0n0W.jpg)
 
 # Installation
-Add Gangs into qb-core/shared.lua like this:
+Add Gangs into rs-core/shared.lua like this:
 ```lua
-QBShared.Gangs = json.decode(LoadResourceFile("qb-gangs", "gangs.json"))
+RSShared.Gangs = json.decode(LoadResourceFile("rs-gangs", "gangs.json"))
 
 ```
-Add event to qb-core/server/events.lua
+Add event to rs-core/server/events.lua
 ```lua
-RegisterServerEvent("QBCore:Server:UpdateGangs")
-AddEventHandler("QBCore:Server:UpdateGangs", function(gangs)
+RegisterServerEvent("RSCore:Server:UpdateGangs")
+AddEventHandler("RSCore:Server:UpdateGangs", function(gangs)
 	QBShared.Gangs = gangs
-	QBCore.Shared.Gangs = gangs
+	RSCore.Shared.Gangs = gangs
 end)
 ```
-Add event to qb-core/client/events.lua
+Add event to rs-core/client/events.lua
 ```lua
-RegisterNetEvent("QBCore:Server:UpdateGangs")
-AddEventHandler("QBCore:Server:UpdateGangs", function(gangs)
+RegisterNetEvent("RSCore:Server:UpdateGangs")
+AddEventHandler("RSCore:Server:UpdateGangs", function(gangs)
 	QBShared.Gangs = gangs
-	QBCore.Shared.Gangs = gangs
+	RSCore.Shared.Gangs = gangs
 end)
 ```
 
-To enable lockable doors for gangs, you need to modify qb-doorlocks/client/main.lua line 217 like this:
+To enable lockable doors for gangs, you need to modify rs-doorlocks/client/main.lua line 217 like this:
 ```lua
 function IsAuthorized(doorID)
-	local PlayerData = QBCore.Functions.GetPlayerData()
+	local PlayerData = RSCore.Functions.GetPlayerData()
 
 	for _,job in pairs(doorID.authorizedJobs) do
 		if job == PlayerData.job.name then
