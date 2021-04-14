@@ -1,13 +1,13 @@
 Config = {
 	["GangLeaders"] = {
 		["ballas"] = {
-			"ORJ52463" -- Add Citizen IDs for gang leaders to add and remove people
+			"JJI46106" -- Antonio
 		},
 		["marabunta"] = {
 
 		},
 		["vagos"] = {
-
+			"FAI02587" -- Mabkitch
 		},
 		["families"] = {
 			
