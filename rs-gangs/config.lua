@@ -30,8 +30,7 @@ Config.Gangs = {
             },
             ["vehicles"] = {
                 ["buffalo2"] = "Buffalo Sport",
-                ["rumpo3"] = "RumpoXL",
-                ["manchez"] = "Manchez",
+                ["rumpo"] = "RumpoXL",
                 ["chino2"] = "Lowrider",
             }
         },
@@ -58,8 +57,7 @@ Config.Gangs = {
             },
             ["vehicles"] = {
                 ["buffalo2"] = "Buffalo Sport",
-                ["rumpo3"] = "RumpoXL",
-                ["manchez"] = "Manchez",
+                ["rumpo"] = "RumpoXL",
                 ["chino2"] = "Lowrider",
             } 
         },
@@ -86,8 +84,7 @@ Config.Gangs = {
             },
             ["vehicles"] = {
                 ["buffalo2"] = "Buffalo Sport",
-                ["rumpo3"] = "RumpoXL",
-                ["manchez"] = "Manchez",
+                ["rumpo"] = "RumpoXL",
                 ["chino2"] = "Lowrider",
             }
         },
@@ -115,8 +112,7 @@ Config.Gangs = {
             },
             ["vehicles"] = {
                 ["buffalo2"] = "Buffalo Sport",
-                ["rumpo3"] = "RumpoXL",
-                ["manchez"] = "Manchez",
+                ["rumpo"] = "RumpoXL",
                 ["chino2"] = "Lowrider",
             }
         },
