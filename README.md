@@ -1,3 +1,5 @@
+# Archived due to using a different gangs system.
+
 # rs-gangs
 Gangs for RS-Core with Gang Support instead of Jobs, supports infinately scaling gangs. Super optimised down to 0.01ms with a gang, 0.00ms as a civilian.
 
